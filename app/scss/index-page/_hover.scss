@@ -95,3 +95,21 @@
   }
   // ______
 }
+
+@media (max-width: 768px) {
+  .hover {
+    nav ul li a {
+      padding: 10px;
+      margin: 0 5px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .hover {
+    nav ul li a {
+      padding: 5px;
+      margin: 0 2px;
+    }
+  }
+}

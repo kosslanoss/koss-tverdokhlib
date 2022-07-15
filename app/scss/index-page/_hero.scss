@@ -4,6 +4,7 @@
   &__inner {
     height: calc(100vh - 60px);
     display: flex;
+    flex-wrap: wrap;
   }
 
   &__content {
@@ -41,8 +42,8 @@
 }
 
 .social {
-  position: absolute;
-  bottom: 15px;
+  position: relative;
+  bottom: 0;
 
   &__list {
     display: flex;
@@ -95,7 +96,7 @@
   .hero {
     &__inner {
       display: flex;
-      flex-wrap: wrap;
+
     }
 
     &__text {

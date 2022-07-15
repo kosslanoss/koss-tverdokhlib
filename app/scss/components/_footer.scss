@@ -15,6 +15,18 @@
   }
 }
 
+.btn-up {
+  svg {
+    transition: stroke 0.3s;
+  }
+
+  &:hover {
+    svg {
+      stroke: $accent;
+    }
+  }
+}
+
 @media (max-width: 992px) {
   .footer {
     padding: 50px 0;

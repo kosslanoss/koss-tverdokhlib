@@ -63,11 +63,9 @@
 
   &__inner-snow {
     margin: 0 auto;
+    width: 80%;
     height: 30vh;
-    // width: 100%;
-    // background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-    overflow: hidden;
-    // filter: drop-shadow(0 0 10px white);
+    // overflow: hidden;
   }
 
   @function random_range($min, $max) {
@@ -112,7 +110,6 @@
       }
     }
   }
-
 }
 
 .swiper-button-prev,

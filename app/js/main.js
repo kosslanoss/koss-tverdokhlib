@@ -1,7 +1,7 @@
 $(function(){
   
   const cursor = document.querySelector('.cursor');
-  const links = document.querySelectorAll('a');
+  const links = document.querySelectorAll('a, .cursor-zoom');
 
   document.addEventListener('mousemove', (e) => {
     cursor.style.left = e.pageX + 'px';
@@ -20,10 +20,20 @@ $(function(){
     })
   })
 
+
+
+  $('.header__cursor-btn').on('click', function () {
+    $('.cursor').toggleClass('cursor--hidden');
+  });
+
+
+
   $('.menu__btn').on('click', function () {
     $('.menu__list').toggleClass('menu__list--active');
     $('.menu__btn').toggleClass('menu__btn--active');
   });
+
+
 
   $('.menu a').on('click', function (e) {
     e.preventDefault();
@@ -51,6 +61,22 @@ $(function(){
       scrollTop: top
     }, 1500);
   });
+
+
+  const tabHeaders = document.querySelectorAll('[data-tab]');
+  const contentBoxes = document.querySelectorAll('[data-tab-content]');
+
+  tabHeaders.forEach(function (item) {
+    item.addEventListener('click', function () {
+
+      contentBoxes.forEach(function (item) {
+        item.classList.add('expertise-tab__content-hidden');
+      });
+      const contentBox = document.querySelector('#' + this.dataset.tab);
+      contentBox.classList.remove('expertise-tab__content-hidden')
+    })
+  });
+
 
   const swiper = new Swiper('.swiper', {
     navigation: {

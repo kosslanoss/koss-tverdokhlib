@@ -1,6 +1,11 @@
 .header {
   padding: 20px 0;
   background-color: $firm;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 998;
 
   &__inner {
     display: flex;
@@ -224,9 +229,17 @@
 @media (max-width: 576px) {
   .header {
     padding: 15px 0;
+
+    &__cursor-btn {
+      display: none;
+    }
   }
 
   .menu__list {
     top: 50px;
+  }
+
+  .cursor {
+    display: none;
   }
 }

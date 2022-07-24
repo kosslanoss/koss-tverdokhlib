@@ -2,17 +2,50 @@
   background-color: $firm;
   
   &__inner {
-    height: calc(100vh - 60px);
+    padding-top: 75px;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
   }
 
   &__content {
-    width: 50%;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__content-circle {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    @keyframes rotate {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    svg {
+      width: 50vh;
+      height: 50vh;
+      animation: rotate linear 20s infinite;
+    }
+
+    svg text {
+      font-size: 25px;
+      fill: $light;
+      text-transform: uppercase;
+    }
   }
 
   &__banner {
-    width: 50%;
+    width: 40%;
     margin: auto 0 auto;
   }
 
@@ -43,14 +76,13 @@
 
 .social {
   position: relative;
-  bottom: 0;
 
   &__list {
     display: flex;
   }
 
   &__item:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 65px;
   }
 
   &__link {
@@ -96,7 +128,6 @@
   .hero {
     &__inner {
       display: flex;
-
     }
 
     &__text {
@@ -123,6 +154,14 @@
 
     &__content {
       width: 100%;
+      order: 1;
+    }
+
+    &__content-circle {
+      svg {
+        width: 30vh;
+        height: 30vh;
+      }
     }
 
     &__banner {

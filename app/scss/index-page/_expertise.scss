@@ -1,0 +1,21 @@
+.expertise {
+  background-color: $light;
+}
+
+.expertise-tab {
+  &__header {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+  &__content-title {
+    margin-bottom: 20px;
+  }
+
+  &__content-hidden {
+    display: none;
+  }
+}

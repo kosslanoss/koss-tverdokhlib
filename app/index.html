@@ -12,15 +12,19 @@
 </head>
 
 <body>
-  
-  <header class="header" id="header">
+
+  <header class="header">
     <div class="container">
       <div class="header__inner">
         <a class="header__name" href="#">
           Koss Tverdokhlib
         </a>
+        <button class="header__cursor-btn button cursor-zoom">Change cursor</button>
         <nav class="menu">
           <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#skills">Skills</a>
+            </li>
             <li class="menu__item">
               <a class="menu__link" href="#hover">Hover</a>
             </li>
@@ -29,9 +33,6 @@
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#navbar">Navbar</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#popup">Popup</a>
             </li>
           </ul>
           <button class="menu__btn" href="#">
@@ -47,45 +48,112 @@
     </div>
   </header>
   <main class="main">
-    <div class="cursor"></div>
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="container">
+        <div class="cursor"></div>
         <div class="hero__inner">
           <div class="hero__content">
+            <div class="hero__content-circle">
+              <svg class="cursor-zoom" viewBox="-126 -126 252 252" xmlns="http://www.w3.org/2000/svg">
+                <path id="path" d="M-125 0a125 125 0 10250 0 125 125 0 10-250 0" fill="none" />
+
+                <text y="40">
+                  <textPath href="#path" startOffset="20">
+                    If You Want to Change the World…  Make your Bed!
+                  </textPath>
+                </text>
+              </svg>
+            </div>
+            <div class="social" id="social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link" href="https://t.me/kosslanoss">
+                    Telegram
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="https://www.linkedin.com/in/kostiantyn-tverdokhlib-275b0a23b/">
+                    Linkedin
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    Instagram
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="hero__banner">
-            <div class="hero__text">
+            <div class="hero__text cursor-zoom">
               <p>Hey, Whats up!</p>
               <p>This is my personal web-site.</p>
               <p>There you can find my portfolio</p>
               <p>See at my tutorials and</p>
               <p>my skills of JavaScript</p>
             </div>
-            <p class="hero__subtitle">Junior</p>
-            <h1 class="hero__title">
+            <p class="hero__subtitle cursor-zoom">Junior</p>
+            <h1 class="hero__title cursor-zoom">
               Front-End
               Developer
             </h1>
             <a class="hero__link button-accent" href="#portfolio">Enjoy my works</a>
           </div>
-          <div class="social" id="social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link" href="https://t.me/kosslanoss">
-                  Telegram
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="https://www.linkedin.com/in/kostiantyn-tverdokhlib-275b0a23b/">
-                  Linkedin
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  Instagram
-                </a>
-              </li>
-            </ul>
+          
+        </div>
+      </div>
+    </section>
+    <section class="expertise section" id="skills">
+      <div class="container">
+        <p class="title">My skills</p>
+        <p class="text">Lets see what I can do</p>
+        <div class="expertise__inner">
+          <ul class="expertise-tab__header">
+            <li class="expertise-tab__title cursor-zoom" data-tab="tab-1">tab 1</li>
+            <li class="expertise-tab__title cursor-zoom" data-tab="tab-2">tab 2</li>
+            <li class="expertise-tab__title cursor-zoom" data-tab="tab-3">tab 3</li>
+          </ul>
+          <div class="expertise-tab__content" data-tab-content id="tab-1">
+            <h4 class="expertise-tab__content-title">tab 1 content</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quo dolorum incidunt veniam placeat
+              delectus veritatis tempora architecto sit quas fuga molestiae, non, a ea odio, deleniti dignissimos
+              molestias alias. Doloremque dolorum ducimus consectetur possimus, esse explicabo accusantium qui nihil
+              ratione voluptate itaque magnam quas voluptatum veritatis et molestiae porro odio repellat cum nemo! Quos
+              tenetur id aliquam? Repellat, cum? Praesentium quia illo dignissimos sed non, consectetur ipsa, suscipit
+              dolorum quod delectus magnam excepturi quam dicta provident tenetur eveniet labore. Ipsam recusandae
+              repudiandae neque quasi praesentium unde nulla iste ab amet necessitatibus atque voluptatibus voluptatem
+              nemo quas illum asperiores, facilis officia nobis vel laudantium rem corrupti voluptate vitae odit.
+              Pariatur! Perspiciatis ab autem, minus ipsum dignissimos rerum eos sit magnam hic, cumque veritatis cum
+              laudantium natus aliquid quis sed, saepe iusto. Placeat vero non aliquid culpa quae fugiat quos
+              reiciendis!
+            </p>
+          </div>
+
+          <div class="expertise-tab__content expertise-tab__content-hidden" data-tab-content id="tab-2">
+            <h4 class="expertise-tab__content-title">tab 2 content</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quo dolorum incidunt veniam placeat
+            delectus veritatis tempora architecto sit quas fuga molestiae, non, a ea odio, deleniti dignissimos
+            molestias alias. Placeat vero non aliquid culpa quae fugiat quos reiciendis!
+            </p>
+          </div>
+
+          <div class="expertise-tab__content expertise-tab__content-hidden" data-tab-content id="tab-3">
+            <h4 class="expertise-tab__content-title">tab 3 content</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quo dolorum incidunt veniam placeat
+            delectus veritatis tempora architecto sit quas fuga molestiae, non, a ea odio, deleniti dignissimos
+            molestias alias. Doloremque dolorum ducimus consectetur possimus, esse explicabo accusantium qui nihil
+            ratione voluptate itaque magnam quas voluptatum veritatis et molestiae porro odio repellat cum nemo! Quos
+            tenetur id aliquam? Repellat, cum? Praesentium quia illo dignissimos sed non, consectetur ipsa, suscipit
+            dolorum quod delectus magnam excepturi quam dicta provident tenetur eveniet labore. Ipsam recusandae
+            repudiandae neque quasi praesentium unde nulla iste ab amet necessitatibus atque voluptatibus voluptatem
+            nemo quas illum asperiores, facilis officia nobis vel laudantium rem corrupti voluptate vitae odit.
+            Pariatur! Perspiciatis ab autem, minus ipsum dignissimos rerum eos sit magnam hic, cumque veritatis cum
+            laudantium natus aliquid quis sed, saepe iusto. Placeat vero non aliquid culpa quae fugiat quos reiciendis!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam libero modi, minus porro totam optio dolorum. Minima, nesciunt nihil eligendi aut dolores quasi non, temporibus, illo dolor harum exercitationem numquam!
+            </p>
           </div>
         </div>
       </div>
@@ -124,7 +192,7 @@
         <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="motion__inner">
+              <div class="motion__inner-waves">
                 <div class="waves">
                   <svg class="waves__img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                     viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -347,23 +415,7 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="motion__inner">
-                <div class="waves">
-                  <svg class="waves__img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                    <defs>
-                      <path id="gentle-wave"
-                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                    </defs>
-                    <g class="parallax">
-                      <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-                      <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-                      <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-                      <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-                    </g>
-                  </svg>
-                </div>
-              </div>
+              
             </div>
           </div>
           <div class="swiper-button-prev"></div>
@@ -376,15 +428,6 @@
         <p class="title">Navbar</p>
         <p class="text">That`s right, menu can be different</p>
         <div class="navbar__inner">
-        </div>
-      </div>
-    </section>
-    <section class="popup section" id="popup">
-      <div class="container">
-        <p class="title">popup</p>
-        <p class="text">Popups are very important for feedbacks</p>
-        <div class="popup__inner">
-
         </div>
       </div>
     </section>
@@ -429,26 +472,22 @@
             <p>Скидка 10% для друзів із соц мереж</p>
           </div>
         </div>
-        <a href="#header" class="btn-up">
+        <a href="#hero" class="btn-up">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="60" height="60" stroke-linecap="round"
             fill="none" stroke="#133133">
             <path id="r1">
-              <animate id="p1" attributeName="d"
-                values="m100,160l0,0 0,0;
+              <animate id="p1" attributeName="d" values="m100,160l0,0 0,0;
                         m70,110l30,-30 30,30;
                         m70,60l30,-40 30,40;
-                        m100,20l0,0 0,0" dur="3s"
-                repeatCount="indefinite" />
+                        m100,20l0,0 0,0" dur="3s" repeatCount="indefinite" />
               <animate attributeName="stroke-width" values="0;12;12;12;0" dur="3s" repeatCount="indefinite"
                 begin="p1.begin" />
             </path>
             <path id="r3">
-              <animate attributeName="d"
-                values="m100,160l0,0 0,0;
+              <animate attributeName="d" values="m100,160l0,0 0,0;
                 m70,110l30,-30 30,30;
                 m70,60l30,-40 30,40;
-                m100,20l0,0 0,0" dur="3s"
-                repeatCount="indefinite" begin="p1.begin+1.5s" />
+                m100,20l0,0 0,0" dur="3s" repeatCount="indefinite" begin="p1.begin+1.5s" />
               <animate attributeName="stroke-width" values="0;12;12;12;0" dur="3s" repeatCount="indefinite"
                 begin="p1.begin+1.5s" />
             </path>
@@ -457,10 +496,10 @@
       </div>
     </div>
   </footer>
-  
 
 
-  
+
+
   <script src="js/main.min.js"></script>
 
 </body>

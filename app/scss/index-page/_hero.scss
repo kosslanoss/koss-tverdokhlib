@@ -149,15 +149,18 @@
 @media (max-width: 768px) {
   .hero {
     &__inner {
-      height: calc(100vh - 50px);
+      height: 100%;
     }
 
     &__content {
       width: 100%;
       order: 1;
     }
-
+    
     &__content-circle {
+      height: 100%;
+      margin: 30px auto;
+
       svg {
         width: 30vh;
         height: 30vh;
@@ -167,6 +170,10 @@
     &__banner {
       width: 100%;
     }
+  }
+
+  .social {
+    margin-bottom: 20px;
   }
 }
 

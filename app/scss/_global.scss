@@ -29,7 +29,7 @@ body {
 }
 
 .title {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-family: $josefin-sans;
   font-weight: 700;
   font-size: 28px;
@@ -142,5 +142,11 @@ body {
 
   .title {
     font-size: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+  .button-accent {
+    max-width: 100%;
   }
 }

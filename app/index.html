@@ -109,51 +109,228 @@
         <p class="text">Lets see what I can do</p>
         <div class="expertise__inner">
           <ul class="expertise-tab__header">
-            <li class="expertise-tab__title cursor-zoom" data-tab="tab-1">tab 1</li>
-            <li class="expertise-tab__title cursor-zoom" data-tab="tab-2">tab 2</li>
-            <li class="expertise-tab__title cursor-zoom" data-tab="tab-3">tab 3</li>
+            <li class="expertise-tab__title expertise-tab__title--active cursor-zoom" data-tab="tab-1">HTML</li>
+            <li class="expertise-tab__title cursor-zoom" data-tab="tab-2">CSS</li>
+            <li class="expertise-tab__title cursor-zoom" data-tab="tab-3">JavaScript</li>
+            <li class="expertise-tab__title cursor-zoom" data-tab="tab-4">UI/UX Design</li>
           </ul>
           <div class="expertise-tab__content" data-tab-content id="tab-1">
-            <h4 class="expertise-tab__content-title">tab 1 content</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quo dolorum incidunt veniam placeat
-              delectus veritatis tempora architecto sit quas fuga molestiae, non, a ea odio, deleniti dignissimos
-              molestias alias. Doloremque dolorum ducimus consectetur possimus, esse explicabo accusantium qui nihil
-              ratione voluptate itaque magnam quas voluptatum veritatis et molestiae porro odio repellat cum nemo! Quos
-              tenetur id aliquam? Repellat, cum? Praesentium quia illo dignissimos sed non, consectetur ipsa, suscipit
-              dolorum quod delectus magnam excepturi quam dicta provident tenetur eveniet labore. Ipsam recusandae
-              repudiandae neque quasi praesentium unde nulla iste ab amet necessitatibus atque voluptatibus voluptatem
-              nemo quas illum asperiores, facilis officia nobis vel laudantium rem corrupti voluptate vitae odit.
-              Pariatur! Perspiciatis ab autem, minus ipsum dignissimos rerum eos sit magnam hic, cumque veritatis cum
-              laudantium natus aliquid quis sed, saepe iusto. Placeat vero non aliquid culpa quae fugiat quos
-              reiciendis!
-            </p>
+            <ul class="expertise-list">
+              <li class="expertise-list__item-head cursor-zoom" data-name="accordeon-title">
+                Semantic code
+              </li>
+              <div class="expertise-list__item-content hidden">
+                <p>
+                  Markup should be performed using semantic tags
+                </p>
+                <p>
+                  Heading tags h1 - h6 are used as intended. Following the hierarchy. The h4 heading cannot be placed after the h1 heading
+                </p>
+              </div>
+              <li class="expertise-list__item-head cursor-zoom" data-name="accordeon-title">
+                BEM metodology
+              </li>
+              <div class="expertise-list__item-content hidden">
+                <p>
+                  Conception BEM is not only a method of naming selectors. It is a paradigm of project perception as a set of entities (blocks, elements, modifiers). A full BEM stack implies double templating and has a relatively high entry threshold.
+                </p>
+              </div>
+              <li class="expertise-list__item-head cursor-zoom" data-name="accordeon-title">
+                Valid and beautiful code
+              </li>
+              <div class="expertise-list__item-content hidden">
+                <p>
+                  The HTML document must be validated. Use the validator to check.
+                </p>
+              </div>
+              <li class="expertise-list__item-head cursor-zoom" data-name="accordeon-title">
+                Markup does not break
+              </li>
+              <div class="expertise-list__item-content hidden">
+                <p>
+                  Markup does not break when adding more text to elements, does not break when adding more text to buttons, does not break when using pictures with inappropriate sizes. That is, you need to independently try to add more text, larger images, etc.
+                </p>
+              </div>
+              <li class="expertise-list__item-head cursor-zoom" data-name="accordeon-title">
+                Dynamic content
+              </li>
+              <div class="expertise-list__item-content hidden">
+                <p>
+                  Content is ready for integration to CMS
+                </p>
+              </div>
+              <li class="expertise-list__item-head cursor-zoom" data-name="accordeon-title">
+                Inclusivity
+              </li>
+              <div class="expertise-list__item-content hidden">
+                <p>
+                  Interactive elements without text description have description sounded by screenreader
+                </p>
+              </div>
+            </ul>
           </div>
 
           <div class="expertise-tab__content expertise-tab__content-hidden" data-tab-content id="tab-2">
-            <h4 class="expertise-tab__content-title">tab 2 content</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quo dolorum incidunt veniam placeat
-            delectus veritatis tempora architecto sit quas fuga molestiae, non, a ea odio, deleniti dignissimos
-            molestias alias. Placeat vero non aliquid culpa quae fugiat quos reiciendis!
-            </p>
+            <ul class="expertise-list">
+              <li class="expertise-list__item-head cursor-zoom" data-name="accordeon-title">
+                Cross-browser markup
+              </li>
+              <div class="expertise-list__item-content hidden">
+                <p>
+                  Markup should be cross-browser displayed in the latest versions of popular browsers: Firefox, Opera, Google Chrome, Safari 
+                </p>
+              </div>
+              <li class="expertise-list__item-head cursor-zoom" data-name="accordeon-title">
+                Responsive
+              </li>
+              <div class="expertise-list__item-content hidden">
+                <p>
+                  Using no more than 4-5 breakpoints. Classic breakpoints are: 1200px, 992px, 768px, 576px
+                </p>
+                <p>
+                  Interactive elements have a normal clickable zone (at least 44px width and height)
+                </p>
+                <p>
+                  Content does not stick to the edges of the screen, does not stick to itself, does not have too much
+                  space between the block and the edge of the screen
+                </p>
+              </div>
+              <li class="expertise-list__item-head cursor-zoom" data-name="accordeon-title">
+                Hover/focus/active
+              </li>
+              <div class="expertise-list__item-content hidden">
+                <p>
+                  All interactive elements (links, buttons) must have different styles in :focus, :hover,
+                  :active states
+                  Fields input, textarea - in state :focus
+                </p>
+                <p>
+                  Using smoothly animation "transition" in hover effects with the property that we are animating,
+                  instead of the "all" value
+                </p>
+              </div>
+              <li class="expertise-list__item-head cursor-zoom" data-name="accordeon-title">
+                Groupping
+              </li>
+              <div class="expertise-list__item-content hidden">
+                <p>
+                  Classes with same styles are grouped. It helps to no-repeat code
+                </p>
+              </div>
+              <li class="expertise-list__item-head cursor-zoom" data-name="accordeon-title">
+                Fonts
+              </li>
+              <div class="expertise-list__item-content hidden">
+                <p>
+                  All fonts are connected by directive @font-face(each font separately).
+                  Correct font-size, line-height, color and font-weight.
+                </p>
+              </div>
+              <li class="expertise-list__item-head cursor-zoom" data-name="accordeon-title">
+                Vars
+              </li>
+              <div class="expertise-list__item-content hidden">
+                <p>
+                  All colors and font-family are placed in variables.
+                </p>
+                <p>
+                  https://habr.com/ru/company/ruvds/blog/523370/
+                </p>
+              </div>
+              
+            </ul>
           </div>
 
           <div class="expertise-tab__content expertise-tab__content-hidden" data-tab-content id="tab-3">
-            <h4 class="expertise-tab__content-title">tab 3 content</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quo dolorum incidunt veniam placeat
-            delectus veritatis tempora architecto sit quas fuga molestiae, non, a ea odio, deleniti dignissimos
-            molestias alias. Doloremque dolorum ducimus consectetur possimus, esse explicabo accusantium qui nihil
-            ratione voluptate itaque magnam quas voluptatum veritatis et molestiae porro odio repellat cum nemo! Quos
-            tenetur id aliquam? Repellat, cum? Praesentium quia illo dignissimos sed non, consectetur ipsa, suscipit
-            dolorum quod delectus magnam excepturi quam dicta provident tenetur eveniet labore. Ipsam recusandae
-            repudiandae neque quasi praesentium unde nulla iste ab amet necessitatibus atque voluptatibus voluptatem
-            nemo quas illum asperiores, facilis officia nobis vel laudantium rem corrupti voluptate vitae odit.
-            Pariatur! Perspiciatis ab autem, minus ipsum dignissimos rerum eos sit magnam hic, cumque veritatis cum
-            laudantium natus aliquid quis sed, saepe iusto. Placeat vero non aliquid culpa quae fugiat quos reiciendis!
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam libero modi, minus porro totam optio dolorum. Minima, nesciunt nihil eligendi aut dolores quasi non, temporibus, illo dolor harum exercitationem numquam!
-            </p>
+            <ul class="expertise-list">
+              <li class="expertise-list__item-head cursor-zoom" data-name="accordeon-title">
+                Accordeon, Tabs and modal window
+              </li>
+              <div class="expertise-list__item-content hidden">
+                <p>
+                  In this section you can see all of this and also you can try to open modal window
+                </p>
+                <button class="modal__btn-open mb-1 button" data-modal-button="modal-1" type="button">
+                  Open modal window
+                </button>
+
+                <div class="modal__block hidden" id="modal-1" data-modal>
+                  <div class="modal__window">
+                    <div class="modal__card">
+                      <p>Hey, look out!!!</p>
+                      <p>This is modal window</p>
+                      <button class="modal__btn-close button" data-modal-close type="button">
+                        Close modal window
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <li class="expertise-list__item-head cursor-zoom" data-name="accordeon-title">
+                Object
+              </li>
+              <div class="expertise-list__item-content hidden">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum explicabo quaerat ea neque iusto
+                  tempora assumenda dignissimos fuga deserunt rerum voluptas alias totam sunt accusantium, veniam labore
+                  facere voluptatibus maxime?
+                </p>
+              </div>
+              <li class="expertise-list__item-head cursor-zoom" data-name="accordeon-title">
+                Function
+              </li>
+              <div class="expertise-list__item-content hidden">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum explicabo quaerat ea neque iusto
+                  tempora assumenda dignissimos fuga deserunt rerum voluptas alias totam sunt accusantium, veniam labore
+                  facere voluptatibus maxime?
+                </p>
+              </div>
+            </ul>
+          </div>
+
+          <div class="expertise-tab__content expertise-tab__content-hidden" data-tab-content id="tab-4">
+            <ul class="expertise-list">
+              <li class="expertise-list__item-head cursor-zoom" data-name="accordeon-title">
+                Education school of arts
+              </li>
+              <div class="expertise-list__item-content hidden">
+                <p>
+                  Drawing
+                </p>
+                <p>
+                  Painting
+                </p>
+              </div>
+              <li class="expertise-list__item-head cursor-zoom" data-name="accordeon-title">
+                Experiense
+              </li>
+              <div class="expertise-list__item-content hidden">
+                <p>
+                  Design of polygraphic production (banners, visit-cards, catalogues)
+                </p>
+                <p>
+                  UX/UI design of web-sites
+                </p>
+                <p>
+                  Logotype development
+                </p>
+              </div>
+              <li class="expertise-list__item-head cursor-zoom" data-name="accordeon-title">
+                Technologies
+              </li>
+              <div class="expertise-list__item-content hidden">
+                <p>
+                  Figma
+                </p>
+                <p>
+                  PS
+                </p>
+                <p>
+                  AI
+                </p>
+              </div>
+            </ul>
           </div>
         </div>
       </div>
@@ -168,7 +345,7 @@
             <ul>
               <li><a href="#">Stroke</a></li>
               <li><a href="#">About</a></li>
-              <li><a href="#">More</a></li>
+              <li><a href="#">Modal</a></li>
               <li><a href="#">Nice staff</a></li>
             </ul>
           </nav>
@@ -177,7 +354,7 @@
             <ul>
               <li><a href="#">Shift</a></li>
               <li><a href="#">About</a></li>
-              <li><a href="#">More</a></li>
+              <li><a href="#">Modal</a></li>
               <li><a href="#">Nice staff</a></li>
             </ul>
           </nav>
@@ -466,10 +643,10 @@
         </ul> -->
         <div class="footer__banner">
           <div class="footer__title">
-            <p>Веб розробка це круто!</p>
+            <p>Web development is awesome!</p>
           </div>
           <div class="footer__text">
-            <p>Скидка 10% для друзів із соц мереж</p>
+            <p>-10% for friends from social media</p>
           </div>
         </div>
         <a href="#hero" class="btn-up">

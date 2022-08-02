@@ -122,14 +122,18 @@ $(function(){
     })
 
 
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.motion__slider', {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
   });
-
-
+  const swiper2 = new Swiper('.portfolio__slider', {
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+  });
 
   
 

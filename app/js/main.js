@@ -122,6 +122,13 @@ $(function(){
     })
 
 
+
+    $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').on('click', function () {
+      $(this).toggleClass('open');
+    });
+
+
+
   const swiper = new Swiper('.motion__slider', {
     navigation: {
       nextEl: '.swiper-button-next',

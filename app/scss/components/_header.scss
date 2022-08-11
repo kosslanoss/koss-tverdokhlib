@@ -69,7 +69,6 @@
     position: relative;
     z-index: 1;
     margin-right: 10px;
-    // transition: cubic-bezier(0.39, 0.575, 0.565, 1) 0.3s all;
 
     &::after {
       content: '';
@@ -103,7 +102,6 @@
     }
 
     &:hover {
-      // background-color: $accent;
       color: $firm;
     }
   }
@@ -115,8 +113,6 @@
 
 @media (max-width: 992px) {
   .menu {
-    order: 1;
-
     &__list {
       flex-direction: column;
       align-items: center;

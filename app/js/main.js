@@ -130,6 +130,11 @@ $(function(){
 
 
   const swiper = new Swiper('.motion__slider', {
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: 'true',
+    },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -139,6 +144,7 @@ $(function(){
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
+      clickable: 'true',
     },
   });
 

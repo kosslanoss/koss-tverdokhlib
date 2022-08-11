@@ -9,12 +9,13 @@
   }
 
   &__content {
-    width: 60%;
+    width: 50%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-right: 25px;
   }
 
   &__content-circle {
@@ -178,5 +179,17 @@
 }
 
 @media (max-width: 576px) {
+  .social {
+    &__item:not(:last-child) {
+      margin-right: 45px;
+    }
+  }
+}
 
+@media (max-width: 375px) {
+  .social {
+    &__item:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
 }

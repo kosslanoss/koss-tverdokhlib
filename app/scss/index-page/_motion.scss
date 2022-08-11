@@ -18,14 +18,7 @@
     position: relative;
     width: 80%;
     height: 30vh;
-    // margin: 0 auto -7px ;
-    // margin-bottom: -7px;
-    /*Fix for safari gap*/
-    min-height: 100px;
-    max-height: 150px;
   }
-
-  /* Animation */
 
   .parallax>use {
     animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
@@ -65,7 +58,6 @@
     margin: 0 auto;
     width: 80%;
     height: 30vh;
-    // overflow: hidden;
   }
 
   @function random_range($min, $max) {
@@ -110,6 +102,19 @@
       }
     }
   }
+
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 8px);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $accent;
 }
 
 .swiper-button-prev,
@@ -117,13 +122,30 @@
   color: $accent;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 756px) {
   .swiper-button-prev {
-    left: 0;
+    left: 20px;
+  }
+  
+  .swiper-button-next {
+    right: 20px;
+  }
+} 
+
+@media (max-width: 576px) {
+  .motion {
+    .waves__img {
+      width: 99%;
+    }
   }
 
+  .swiper-pagination {
+    display: block;
+  }
+
+  .swiper-button-prev,
   .swiper-button-next {
-    right: 0;
+    display: none;
   }
 }
 

@@ -3,8 +3,13 @@
 
   &__inner {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+  }
+
+  &__banner {
+    margin-bottom: 25px;
   }
 
   &__title {
@@ -13,22 +18,28 @@
     margin-bottom: 10px;
     color: $default;
   }
+
+  .social__link {
+    color: $dark;
+
+    &::after {
+      background-color: $firm;
+    }
+
+    &:hover {
+      color: $firm;
+    }
+  }
 }
 
 .btn-up {
-  width: 5em;
-  height: 5em;
-  padding: 0;
-  border-radius: 100%;
-  // box-shadow: none;
-  // background: none;
-  // border: 0;
-  // box-sizing: border-box;
-  margin: 1em;
-  padding: 1em 2em;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 5px;
+  padding: 5px 5px;
   color: $dark;
   position: relative;
-  vertical-align: middle;
 
   &::before,
   &::after {
@@ -37,8 +48,8 @@
     width: 100%;
     height: 100%;
     border-radius: 100%;
-    top: 3px;
-    left: 23px;
+    bottom: 6px;
+    left: 0;
   }
 
   &:hover {
@@ -46,17 +57,14 @@
   }
 
   &::before {
-    border: 2px solid transparent; // We're animating border-color again
+    border: 2px solid transparent;
   }
 
   &:hover::before {
-    border-top-color: $dark; // Show borders
+    border-top-color: $dark;
     border-right-color: $dark;
     border-bottom-color: $dark;
-    transition:
-      border-top-color 0.15s linear, // Stagger border appearances
-      border-right-color 0.15s linear 0.10s,
-      border-bottom-color 0.15s linear 0.20s;
+    transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.10s, border-bottom-color 0.15s linear 0.20s;
   }
 
   &::after {
@@ -64,13 +72,11 @@
   }
 
   &:hover::after {
-    border-top: 2px solid $dark; // Shows border
-    border-left-width: 2px; // Solid edges, invisible borders
-    border-right-width: 2px; // Solid edges, invisible borders
-    transform: rotate(270deg); // Rotate around circle
-    transition:
-      transform 0.4s linear 0s,
-      border-left-width 0s linear 0.35s; // Solid edge post-rotation
+    border-top: 2px solid $dark;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    transform: rotate(270deg);
+    transition: transform 0.4s linear 0s, border-left-width 0s linear 0.35s;
   }
 
   &:focus,
@@ -79,7 +85,6 @@
       stroke: $accent;
     }
   }
-
 }
 
 @media (max-width: 992px) {
@@ -130,11 +135,5 @@
     &__text {
       font-size: 14px;
     }
-  }
-}
-
-@media (max-width: 460px) {
-  .footer {
-    padding: 0;
   }
 }

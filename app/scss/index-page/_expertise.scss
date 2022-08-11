@@ -7,6 +7,7 @@
     display: flex;
     cursor: pointer;
     margin-bottom: 20px;
+    align-items: center;
   }
 
   &__title {
@@ -123,6 +124,27 @@
 
   &__btn-close {
     margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .expertise-tab {
+    &__title:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &__header {
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .expertise-tab {
+    &__header {
+      overflow: scroll;
+    }
   }
 }
 

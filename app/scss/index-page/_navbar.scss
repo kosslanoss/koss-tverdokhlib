@@ -3,6 +3,16 @@
     display: flex;
     flex-wrap: wrap;
   }
+  
+  &__item {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    margin: 50px auto;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  }
 
   .open {
     span {
@@ -10,41 +20,28 @@
     }
   }
 
-  /* Icon 1 */
-
   &__item--one,
   &__item--two,
   &__item--three,
   &__item--four {
-    width: 60px;
-    height: 45px;
-    position: relative;
-    margin: 50px auto;
-    transform: rotate(0deg);
-    transition: .5s ease-in-out;
-    cursor: pointer;
-
     &:hover {
       span {
         background-color: $firm;
       }
     }
-  }
 
-  &__item--one span,
-  &__item--two span,
-  &__item--three span,
-  &__item--four span {
-    display: block;
-    position: absolute;
-    height: 9px;
-    width: 100%;
-    background-color: $dark;
-    border-radius: 9px;
-    opacity: 1;
-    left: 0;
-    transform: rotate(0deg);
-    transition: .25s ease-in-out;
+    span {
+      display: block;
+      position: absolute;
+      height: 6px;
+      width: 100%;
+      background-color: $dark;
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: .25s ease-in-out;
+    }
   }
 
   &__item--one span:nth-child(1) {
@@ -74,18 +71,16 @@
     transform: rotate(-135deg);
   }
 
-  /* Icon 2 */
-
-  &__item--two {}
-
-  &__item--two span {
-    display: block;
-    position: absolute;
-    height: 9px;
-    width: 50%;
-    opacity: 1;
-    transform: rotate(0deg);
-    transition: .25s ease-in-out;
+  &__item--two {
+    span {
+      display: block;
+      position: absolute;
+      height: 6px;
+      width: 50%;
+      opacity: 1;
+      transform: rotate(0deg);
+      transition: .25s ease-in-out;
+    }
   }
 
   &__item--two span:nth-child(even) {
@@ -153,8 +148,6 @@
     top: 29px;
   }
 
-  /* Icon 3 */
-
   &__item--three span:nth-child(1) {
     top: 0px;
   }
@@ -188,10 +181,6 @@
     left: 50%;
   }
 
-  /* Icon 4 */
-
-  // #nav-icon4 {}
-
   &__item--four span:nth-child(1) {
     top: 0px;
     transform-origin: left center;
@@ -222,5 +211,13 @@
     transform: rotate(-45deg);
     top: 39px;
     left: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    &__item {
+      margin: 25px auto;
+    }
   }
 }
